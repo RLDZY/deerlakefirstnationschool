@@ -3,6 +3,10 @@ import Header from '@/components/Header/header.jsx'
 import { Button } from '@/components/ui/button.jsx'
 import Image from 'next/image'
 import Link from 'next/link'
+import Menu from '@/components/Header/menu.jsx'
+import Hero from '@/components/HeroSection/Hero'
+import PostsList from '@/components/PostList'
+import { NewsAndUpdate } from '@/components/News/NewsAndUpdate'
 
 export default function page() {
   return (
@@ -14,19 +18,37 @@ export default function page() {
       src="/image/logo.png"
       width={82}
       height={82}
-      alt="Picture of the author"
+      alt="dlfns-logo"
     /> 
-      <h1 className='text-[#222B9A] font-bold'>Deer Lake First Nation School</h1>
+      <h1 className='text-[#222B9A] font-bold hidden lg:flex'>Deer Lake First Nation School</h1>
     </div></Link>
-    <div>
+    <div className='hidden md:flex'>
     <Header/>
     </div>
-    <div>
+    <div className='hidden md:flex'>
       <Button className="bg-[#222B9A] px-[2rem]">Log In</Button>
     </div>
+
+    <div className='md:hidden'>
+      <Menu/>
+    </div>
+
+
     </div>
     </header>
-    
+
+    {/* Hero Section */}
+    <section className='w-[90%] mx-auto'>
+    <Hero/>
+    </section>
+    {/* Hero Section */}
+
+ {/* News Section */}
+    <section className='w-[90%] mx-auto pb-[4rem]'>
+      <NewsAndUpdate/>
+    </section>
+ {/* News Section */}
+
     </>
   )
 }
