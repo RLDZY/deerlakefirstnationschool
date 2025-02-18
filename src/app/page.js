@@ -8,6 +8,8 @@ import Hero from '@/app/components/HeroSection/Hero'
 import PostsList from '@/app/components/PostList'
 import { NewsAndUpdate } from '@/app/components/News/NewsAndUpdate'
 import Welcome from './components/Welcome/Welcome'
+import BentoGridSecondDemo from './components/Features/BentoGridSecondDemo'
+
 
 export default function page() {
   return (
@@ -47,6 +49,13 @@ export default function page() {
  {/* News Section */}
  <section className='w-[90%] mx-auto pb-[4rem]'>
       <Welcome/>
+    </section>
+ {/* News Section */}
+
+{/* News Section */}
+<section className='w-[90%] mx-auto pb-[4rem]'>
+  <h1 className='pb-[2rem]'>What We Offer</h1>
+      <BentoGridSecondDemo/>
     </section>
  {/* News Section */}
 

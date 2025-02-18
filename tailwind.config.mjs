@@ -10,7 +10,8 @@ export default {
   	extend: {
 
 			backgroundImage: {
-			  'hero-image': "url('/image/hero-img.png')"
+			  'hero-image': "url('/image/hero-img.png')",
+			  'academic-image': "url('/image/feature/academic.png')",
 			},
 
 

@@ -9,7 +9,7 @@ export function HeroImage() {
           <TitleComponent title={blogContent.author} avatar={blogContent.authorAvatar} />
         }>
         <div
-          className="bg-hero-image bg-contain bg-no-repeat relative overflow-hidden w-[450px] lg:w-[660px] h-[360px] transition duration-200 group">
+          className="bg-hero-image bg-contain bg-no-repeat relative overflow-hidden w-[380px] lg:w-[660px] h-[360px] transition duration-200 group">
         </div>
       </FollowerPointerCard>
     </div>)

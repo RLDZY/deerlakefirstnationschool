@@ -24,7 +24,7 @@ const Images = [
 
 export default function LogoHero() {
   return (
-    <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 items-center w-[90%] mx-auto'>
+    <div className='grid place-items-end grid-cols-3 md:grid-cols-4 lg:grid-cols-6 items-center w-[100%] lg:w-[90%] mx-auto'>
        {Images.map((item, i) =>(
         <Image 
         key={i}
